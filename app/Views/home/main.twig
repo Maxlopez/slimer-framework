@@ -1,0 +1,22 @@
+{% extends 'templates/master/master.twig' %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+	<div class="col-md-6 text-center">
+	<img src="{{ base_url() }}/public/assets/images/favicon.png" alt="Slimer Logo" class="slimer-logo">
+	<h1>{{ app.name }}</h1>
+	<h3>{{ app.version }}</h3>
+	<p><strong>Slimer</strong> is an application following MVC pattern for Slim Framework 3 <a href="https://www.slimframework.com/" target="_blank"><i class="fa fa-link"></i></a></p>
+
+	<p style="font-size:12px; color: #222"><strong>Slimer </strong> is
+	   {% for item in app.features %}
+		<span>{{ item }} </span>
+		{% endfor %}
+		and an Scalable application.<span>
+	</p>
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+
+{% if flash.getMessage( 'success' ) %}
+	<div class="alert alert-success alert-dismissible fade show" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    	<span aria-hidden="true">&times;</span>
+		</button>
+		{{ flash.getMessage( 'success' ) | first }}
+	</div>
+{% endif %}
+
+{% if flash.getMessage( 'info' ) %}
+	<div class="alert alert-info alert-dismissible fade show" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    	<span aria-hidden="true">&times;</span>
+		</button>
+		{{ flash.getMessage( 'info' ) | first }}
+	</div>
+{% endif %}
+
+{% if flash.getMessage( 'error' ) %}
+	<div class="alert alert-danger alert-dismissible fade show" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    	<span aria-hidden="true">&times;</span>
+		</button>
+		{% for error in flash.getMessage( 'error' ) %}
+			<li>{{ error }}</li>
+		{% endfor %}
+	</div>
+{% endif %}
+
+{% if flash.getMessage( 'warning' ) %}
+	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    	<span aria-hidden="true">&times;</span>
+		</button>
+		{% for warning in flash.getMessage( 'warning' ) %}
+			<li>{{ warning }}</li>
+		{% endfor %}
+	</div>
+{% endif %}
+
+

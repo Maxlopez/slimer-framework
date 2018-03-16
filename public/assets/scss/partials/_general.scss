@@ -1,0 +1,23 @@
+/*
+|-----------------------------------------------------------------------------------
+| General
+|-----------------------------------------------------------------------------------
+*/
+body {
+  font-size: 16px;
+  font-family: $font-family;
+  line-height: 1.5;
+}
+* {
+  box-sizing: border-box;
+  &:focus {
+    outline: none;
+  }
+}
+.slimer-page {
+	padding-top: 100px;
+	img.slimer-logo {
+		padding: 30px 0;
+	}
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Tell the browser to be responsive to screen width -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicon icon -->
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ base_url() }}/public/assets/images/favicon.png">
+	<title>Slimer Framework</title>
+
+	{% include 'templates/master/inc/css-files.twig' %}
+
+</head>
+
+<body>
+
+	<div class="container slimer-page">
+		<div class="row messages">
+			<div class="col-sm-12">
+				{% include 'templates/master/inc/messages.twig' %}
+			</div>
+		</div>
+
+		{% block content %}
+
+		{% endblock %}
+
+	</div><!-- .container -->
+
+	{% include 'templates/master/inc/js-files.twig' %}
+
+</body>
+
+</html>

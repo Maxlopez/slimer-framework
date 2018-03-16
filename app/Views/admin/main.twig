@@ -1,0 +1,15 @@
+{% extends 'templates/master/master.twig' %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+	<div class="col-md-6 text-center">
+    <img src="{{ base_url() }}/public/assets/images/favicon.png" alt="Slimer Logo" class="slimer-logo">
+    <h1>{{ app.name }}</h1>
+    <h3>{{ app.version }}</h3>
+    <p>Admin dashboard page</p>
+    {{ key }}
+  </div>
+</div>
+
+{% endblock %}
