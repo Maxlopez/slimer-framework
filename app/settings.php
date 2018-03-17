@@ -1,8 +1,10 @@
 <?php
 return array(
-  'settings' => array(
-    'app' => array(
-      'name' => 'Your app name',
-    ),
-  ),
+  'app' => array(
+  	//Public dir, default = public
+  	'public_dir' => 'public',
+
+  	//Add your settings
+  	'new-key' => 'new-value'
+  )
 );

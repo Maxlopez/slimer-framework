@@ -186,5 +186,25 @@ class SlimerFunctions {
     }
 	}
 
+	/*
+	|-----------------------------------------------------------------------------------
+	| Appends a trailing slash.
+	|-----------------------------------------------------------------------------------
+	*/
+	public static function add_slash( $string ) {
+		return self::remove_slash( $string ) . '/';
+	}
+
+	/*
+	|-----------------------------------------------------------------------------------
+	| Removes trailing forward slashes and backslashes if they exist.
+	|-----------------------------------------------------------------------------------
+	*/
+	public static function remove_slash( $string ) {
+		return rtrim( $string, '/\\' );
+	}
+
+
+
 
 }
