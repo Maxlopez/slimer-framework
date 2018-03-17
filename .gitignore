@@ -1,6 +1,6 @@
 # Prerequisites
 
 .idea/
-cache/*
-log/*
+cache/**
+log/**
 vendor/
