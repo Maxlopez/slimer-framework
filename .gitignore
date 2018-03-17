@@ -31,5 +31,6 @@
 *.out
 *.app
 
-
-/vendor
+vendor/
+cache/twig
+.idea/
