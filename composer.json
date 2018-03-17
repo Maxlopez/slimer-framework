@@ -1,4 +1,9 @@
 {
+    "name": "maxlopez/slimerframework",
+    "description": "PHP Framework - Slimer is an application following MVC pattern for Slim Framework 3",
+    "keywords": ["slimer","slim","framework"],
+    "license": "MIT",
+    "type": "project",
     "require": {
         "slim/slim": "^3.0",
         "monolog/monolog": "^1.23",
