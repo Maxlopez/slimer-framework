@@ -47,3 +47,19 @@ $container['flash'] = function( $c ) {
 $container['session'] = function ( $container ) {
   return new \SlimSession\Helper;
 };
+
+
+/*
+|---------------------------------------------------------------------------------------------------
+| Database - Eloquent
+|---------------------------------------------------------------------------------------------------
+*/
+$container['eloquent'] = function( $container ){
+  if ( ! class_exists( '\Illuminate\Database\Capsule\Manager' ) ) {
+    return null;
+  }
+  $capsule = new \Illuminate\Database\Capsule\Manager;
+  $capsule->setAsGlobal();
+  $capsule->bootEloquent();
+  return $capsule;
+};

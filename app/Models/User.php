@@ -1,14 +1,14 @@
 <?php
 namespace App\Models;
 
-class User extends BaseModel {
+class User extends Model {
 
   /*
 	|---------------------------------------------------------------------------------------------------
 	| Create
 	|---------------------------------------------------------------------------------------------------
 	*/
-	public function create( $request ){
+	public function create(){
 		//DB connection and create user
 	}
 

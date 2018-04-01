@@ -3,7 +3,13 @@ namespace Slimer\Models;
 
 use Slimer\Core\Traits\MainTrait;
 
-class Model {
+if ( class_exists( '\Illuminate\Database\Eloquent\Model' ) ) {
+  class SlimerBaseModel extends \Illuminate\Database\Eloquent\Model { }
+} else {
+  class SlimerBaseModel { }
+}
+
+class BaseModel extends SlimerBaseModel {
 
 	use MainTrait;
 
