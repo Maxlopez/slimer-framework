@@ -19,19 +19,19 @@ $container['functions'] = function( $container ){
 | DB using Eloquent
 |---------------------------------------------------------------------------------------------------
 */
-$container['db'] = function( $container ){
-  $capsule = $container->get( 'eloquent' );
-  if( ! $capsule ){
-    return null;
-  }
-  $settings = $container->get( 'settings' );
-  $connections = $settings['app']['connections'];
-
-  //Add connections
-  $capsule->addConnection( $connections['mysql'] );
-  //$capsule->addConnection( $connections['pgsql'] );//PostgreSQL
-  //$capsule->addConnection( $connections['sqlsrv'] );//SQL Server
-  //$capsule->addConnection( $connections['sqlite'] );//SQLite
-
-  return $capsule;
-};
+// $container['db'] = function( $container ){
+//   $capsule = $container->get( 'eloquent' );
+//   if( ! $capsule ){
+//     return null;
+//   }
+//   $settings = $container->get( 'settings' );
+//   $connections = $settings['app']['connections'];
+//
+//   //Add connections
+//   $capsule->addConnection( $connections['mysql'] );
+//   //$capsule->addConnection( $connections['pgsql'] );//PostgreSQL
+//   //$capsule->addConnection( $connections['sqlsrv'] );//SQL Server
+//   //$capsule->addConnection( $connections['sqlite'] );//SQLite
+//
+//   return $capsule;
+// };
