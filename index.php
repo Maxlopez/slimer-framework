@@ -5,6 +5,6 @@
 | Initialize App
 |---------------------------------------------------------------------------------------------------
 */
-require_once dirname( __FILE__ ) . '/slimer/Core/autoload.php';
+require_once dirname( __FILE__ ) . '/vendor/maxlopez/slimer-core/src/Slimer/Core/autoload.php';
 
 $app->run();
