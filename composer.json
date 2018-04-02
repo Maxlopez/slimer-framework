@@ -1,11 +1,14 @@
 {
     "name": "maxlopez/slimer-framework",
     "description": "PHP Framework - Slimer is an application following MVC pattern for Slim Framework 3",
-    "keywords": ["slimer","slim","framework"],
+    "keywords": ["slimer","slim","framework", "api", "router"],
     "license": "MIT",
     "type": "project",
     "require": {
       "maxlopez/slimer-core": "*"
+    },
+    "require-dev": {
+    	"kint-php/kint": "^2.1"
     },
     "autoload": {
     	"psr-4": {
